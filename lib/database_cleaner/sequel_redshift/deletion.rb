@@ -5,6 +5,7 @@ require 'database_cleaner/sequel_redshift/truncation'
 module DatabaseCleaner::SequelRedshift
   class Deletion < Truncation
     def disable_referential_integrity(tables)
+      yield
     end
 
     def delete_tables(db, tables)
