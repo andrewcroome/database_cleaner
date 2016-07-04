@@ -2,7 +2,7 @@ require 'database_cleaner/sequel_redshift/base'
 require 'database_cleaner/generic/truncation'
 require 'database_cleaner/sequel_redshift/truncation'
 
-module DatabaseCleaner::Sequel
+module DatabaseCleaner::SequelRedshift
   class Deletion < Truncation
     def disable_referential_integrity(tables)
       case db.database_type
