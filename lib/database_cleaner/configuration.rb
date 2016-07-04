@@ -119,6 +119,8 @@ module DatabaseCleaner
           DatabaseCleaner::CouchPotato
         when :sequel
           DatabaseCleaner::Sequel
+        when :sequel_redshift
+          DatabaseCleaner::SequelRedshift
         when :ohm
           DatabaseCleaner::Ohm
         when :redis
